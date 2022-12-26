@@ -1,0 +1,91 @@
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+$transparentWhitePara: rgb(240, 240, 240);
+$veryLightGrayBgrndHdngBtn: hsl(0, 0%, 95%);
+
+body {
+  font-size: 15px;
+  background-color: rgb(240, 240, 240);
+  padding: 0;
+  margin: 5rem 1rem;
+  box-sizing: border-box;
+}
+.parent-container {
+  max-width: 325px;
+  margin: auto;
+  margin-top: 5%;
+}
+.car-type-heading {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: $veryLightGrayBgrndHdngBtn;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.vehicle-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: $transparentWhitePara;
+  width: 80%;
+  line-height: 1.25rem;
+}
+.button-learn-more {
+  border-radius: 1rem;
+  background-color: $veryLightGrayBgrndHdngBtn;
+  width: 6rem;
+  font-family: "Lexend Deca", sans-serif;
+  border: 1px solid $veryLightGrayBgrndHdngBtn;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+.button-learn-more:hover {
+  cursor: pointer;
+  color: $transparentWhitePara;
+  background-color: transparent;
+}
+
+/* styles for sedan wrapper */
+.sedans-inner-wrapper {
+  background-color: $brightOrange;
+  padding: 3rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.sedans-inner-wrapper button {
+  color: $brightOrange;
+}
+
+/* styles for suv wrapper */
+.suvs-inner-wrapper {
+  background-color: $darkCyan;
+  padding: 3rem;
+}
+.suvs-inner-wrapper button {
+  color: $darkCyan;
+}
+/* styles for luxury car wrapper */
+.luxury-inner-wrapper {
+  background-color: $veryDarkCyan;
+  padding: 3rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.luxury-inner-wrapper button {
+  color: $veryDarkCyan;
+}
+
+@media (min-width: 1440px) {
+  .parent-container {
+    display: flex;
+    max-width: 80vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30vh;
+  }
+  .sedans-inner-wrapper {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .luxury-inner-wrapper {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}

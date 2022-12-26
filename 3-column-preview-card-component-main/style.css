@@ -1,0 +1,98 @@
+body {
+  font-size: 15px;
+  background-color: #f0f0f0;
+  padding: 0;
+  margin: 5rem 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parent-container {
+  max-width: 325px;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.car-type-heading {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.vehicle-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #f0f0f0;
+  width: 80%;
+  line-height: 1.25rem;
+}
+
+.button-learn-more {
+  border-radius: 1rem;
+  background-color: #f2f2f2;
+  width: 6rem;
+  font-family: "Lexend Deca", sans-serif;
+  border: 1px solid #f2f2f2;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.button-learn-more:hover {
+  cursor: pointer;
+  color: #f0f0f0;
+  background-color: transparent;
+}
+
+/* styles for sedan wrapper */
+.sedans-inner-wrapper {
+  background-color: #e38826;
+  padding: 3rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.sedans-inner-wrapper button {
+  color: #e38826;
+}
+
+/* styles for suv wrapper */
+.suvs-inner-wrapper {
+  background-color: #006970;
+  padding: 3rem;
+}
+
+.suvs-inner-wrapper button {
+  color: #006970;
+}
+
+/* styles for luxury car wrapper */
+.luxury-inner-wrapper {
+  background-color: #004241;
+  padding: 3rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.luxury-inner-wrapper button {
+  color: #004241;
+}
+
+@media (min-width: 1440px) {
+  .parent-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 80vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30vh;
+  }
+  .sedans-inner-wrapper {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .luxury-inner-wrapper {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
