@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="advice-num-wrapper">
+        <h1 class="title">Roll the dice to reveal a new quote</h1>
+        <h2>Advice #<span id="advice-num">117</span></h2>
+      </div>
+      <blockquote class="quote-wrapper">
+        "It is easy to sit up and take notice, what's difficult is getting up
+        and taking action."
+      </blockquote>
+      <picture>
+        <source
+          media="(max-width:375px)"
+          srcset="./images/pattern-divider-mobile.svg"
+        />
+        <source
+          media="(min-width:376px)"
+          srcset="./images/pattern-divider-desktop.svg"
+        />
+        <img src="./images/pattern-divider-mobile.svg" alt="pause icon" />
+      </picture>
+      <button type="button" id="quote-generator" class="quote-generator">
+        <img src="./images/icon-dice.svg" alt="dice icon" class="dice-icon" />
+      </button>
+    </main>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
