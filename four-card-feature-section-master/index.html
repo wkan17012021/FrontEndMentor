@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Four card feature section</title>
+  </head>
+  <body>
+    <main class="global-wrapper max-w-xs m-auto mt-16 xl:max-w-screen-lg xl:grid xl:grid-cols-3 xl:grid-rows-6 xl:gap-5">
+      <div class="title-wrapper text-center w-100 xl:col-start-2 xl:mt-16 xl:-ml-24 xl:-mr-24 xl:row-start-1">
+        <h1 class="title text-xl font-extralight leading-8 xl:text-4xl">
+          Reliable, efficient delivery<br /><span
+            class="power-by-tech font-semibold"
+            >Powered by Technology</span
+          >
+        </h1>
+        <p class="intro-para font-extralight mt-6">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+      <div class="supervisor-wrapper mt-16 rounded-2xl w-100 p-6 hover:-translate-y-1 xl:row-start-3 xl:row-span-2 xl:mt-0">
+        <h2 class="section-title">Supervisor</h2>
+        <p class="section-para font-extralight">
+          Monitors activity to identify project roadblocks
+        </p>
+        <div class="icon-wrapper motion-safe:animate-pulse">
+          <img
+            src="./images/icon-supervisor.svg"
+            alt="icon of a magnifying glass"
+          />
+        </div>
+      </div>
+      <div class="team-builder-wrapper rounded-2xl mt-6 w-100 p-6 hover:-translate-y-1 xl:row-start-2 xl:row-span-2">
+        <h2 class="section-title">Team Builder</h2>
+        <p class="section-para font-extralight">
+          Scans our talent network to create the optimal team for your project
+        </p>
+        <div class="icon-wrapper motion-safe:animate-pulse">
+          <img
+            src="./images/icon-team-builder.svg"
+            alt="icon of a house and spreadsheet"
+          />
+        </div>
+      </div>
+      <div class="karma-wrapper rounded-2xl mt-6 w-100 p-6 hover:-translate-y-1 xl:row-start-4 xl:row-span-2">
+        <h2 class="section-title">Karma</h2>
+        <p class="section-para font-extralight">
+          Regularly evaluates our talent to ensure quality
+        </p>
+        <div class="icon-wrapper motion-safe:animate-pulse">
+          <img src="./images/icon-karma.svg" alt="icon of a light bulb" />
+        </div>
+      </div>
+      <div class="calculator-wrapper rounded-2xl my-6 w-100 p-6 hover:-translate-y-1 xl:row-start-3 xl:row-span-2 xl:mt-0">
+        <h2 class="section-title">Calculator</h2>
+        <p class="section-para font-extralight">
+          Uses data from past projects to provide better delivery estimates
+        </p>
+        <div class="icon-wrapper motion-safe:animate-pulse">
+          <img
+            src="./images/icon-calculator.svg"
+            alt="icon of a desktop monitor"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
