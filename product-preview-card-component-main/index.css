@@ -1,0 +1,146 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card-wrapper {
+  max-width: 350px;
+  margin: 2rem auto 10rem;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.product-img-wrapper {
+  width: 350px;
+  height: 250px;
+  background: url(./images/image-product-mobile.jpg) no-repeat;
+  background-size: contain;
+  border-radius: 5px 5px 0 0;
+}
+
+h1 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: hsl(212, 21%, 14%);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.price-wrapper {
+  margin: 2rem auto 0;
+}
+
+.current-price {
+  font-size: 2rem;
+  color: rgb(41, 156, 108);
+  padding-right: 1.5rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  position: relative;
+  top: -5px;
+}
+
+.add-to-cart-btn {
+  cursor: pointer;
+  background-color: rgb(41, 156, 108);
+  color: white;
+  width: 90%;
+  height: 2.5rem;
+  margin: 0 auto 1rem;
+  display: block;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  border: none;
+}
+
+.add-to-cart-btn img {
+  position: relative;
+  top: 2px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: hsl(158, 36%, 37%);
+}
+.add-to-cart-btn:active {
+  background-color: black;
+}
+
+/* Combined styles */
+h2,
+.current-price {
+  font-family: "Fraunces", Helvetica, serif;
+}
+
+h1,
+p,
+.old-price {
+  color: hsl(228, 12%, 48%);
+}
+
+.card-wrapper,
+.add-to-cart-btn {
+  border-radius: 5px;
+}
+
+.product-details,
+.product-img-wrapper,
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+.product-details,
+.add-to-cart-btn img {
+  padding: 0 1rem;
+}
+
+/* tablet - desktop size 768px breakpoint */
+
+@media (min-width: 768px) {
+  .card-wrapper {
+    max-width: 600px;
+    height: 500px;
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .product-img-wrapper {
+    grid-area: 1 / 1 / 6 / 2;
+    width: 100%;
+    height: 100%;
+    background: url(./images/image-product-desktop.jpg) no-repeat;
+    background-size: cover;
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  .product-details {
+    grid-area: 1 / 2 / 5 / 3;
+    padding: 2rem 1.25rem 1rem 1.5rem;
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+  p {
+    padding-right: 1rem;
+  }
+  .price-wrapper {
+    margin: 3rem auto 1rem;
+  }
+  .add-to-cart-btn {
+    grid-area: 5 / 2 / 6 / 3;
+    width: 80%;
+    margin: auto auto;
+  }
+}
